@@ -1,0 +1,46 @@
+from yahoo_finance import *
+import sys
+
+class Stocks:
+
+	def __init__(self, symbol, open_price, daily_high, daily_low, volume, one_w_high, one_w_low, two_w_high, two_w_low):
+		self.symbol = symbol
+		self.open_price = open_price
+		self.daily_high = daily_high
+		self.daily_low = daily_low
+		self.volume = volume
+		self.one_w_high = one_w_high
+		self.one_w_low = one_w_low
+		self.two_w_high = two_w_high
+		self.two_w_low = two_w_low
+
+
+
+	# calculates percent change of daily stock from open
+	def delta_daily(self):
+		pass
+
+	# calculates percent change of weekly stock from stock open on day 1 of chosen date
+	def delta_weekly(self):
+		pass
+
+	#calculates percent change of weekly stock from open on day 1 of chosen date
+	def delta_two_week(self):
+		pass
+
+	#prints all of the information forward to user
+	def print_info(self):
+		return '{} {} {} {} {} {} {} {} {}'.format(self.symbol, self.open_price, self.daily_low, self.daily_high, self.volume, self.one_w_low, self.one_w_high, self.two_w_low, self.two_w_high)
+
+# test to see if this version works correctly
+sto_1 = Stocks('YHOO', '10', '10', '20', '100', '9', '22', '9', '24')
+
+print(sto_1.symbol),
+print(sto_1.open_price),
+print(sto_1.daily_low),
+print(sto_1.daily_high),
+print(sto_1.volume),
+print(sto_1.one_w_high),
+print(sto_1.one_w_low),
+print(sto_1.two_w_low),
+print(sto_1.two_w_high),
