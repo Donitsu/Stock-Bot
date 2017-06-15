@@ -44,3 +44,5 @@ print(sto_1.one_w_high),
 print(sto_1.one_w_low),
 print(sto_1.two_w_low),
 print(sto_1.two_w_high),
+
+print(sto_1.print_info())
